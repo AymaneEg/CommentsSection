@@ -10,7 +10,8 @@ module.exports = {
          LightGrayishBlue: 'hsl(239, 57%, 85%)',
          PaleRed: 'hsl(357, 100%, 86%)',
          GrayishBlue: 'hsl(211, 10%, 45%)',
-         Light : '#f5f6fa'
+         Light : '#f5f6fa' , 
+         LightBlack : 'rgb(0,0,0,.7)' 
       }
     },
   },
