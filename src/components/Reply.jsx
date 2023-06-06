@@ -117,7 +117,7 @@ export default function Reply(props) {
     <>
     
     <div className='ReplyContainer'>
-     <div className='w-10/12 min-h-40  bg-white rounded-xl  pb-12 lg:pb-4  lg:px-8 py-4 '>
+     <div className='w-11/12 min-h-40  bg-white rounded-xl  pb-12 lg:pb-4  lg:px-8 py-4 '>
         <div className='flex gap-4'>
             <div className=''>
                <ul className='flex flex-row lg:flex-col absolute lg:relative  justify-center items-center w-24 lg:w-8 bottom-4 lg:bottom-0 ml-4 lg:ml-0 rounded-xl bg-Light gap-y-2  text-white'>
@@ -132,7 +132,7 @@ export default function Reply(props) {
                      <span className='w-10'><img src={props.reply.image} alt="" /></span>
                      <h1 className='font-bold text-ModerateBlue'>{props.reply.name}</h1>
                      <span className='bg-ModerateBlue text-white w-8 h-4 p-2 rounded-md flex items-center justify-center text-sm' style={{display : props.reply.name === CurrentUser.name ? 'flex': 'none'}} >you</span>
-                     <span className='text-GrayishBlue'>1 month ago</span>
+                     <span className='text-GrayishBlue hidden lg:flex'>1 month ago</span>
                   </div> 
     
                   <div className='flex items-center '>
@@ -176,7 +176,7 @@ export default function Reply(props) {
       </div>
 
       <div className='w-full justify-end'  style={{display : replay ? "flex" : "none"}}>
-         <div className='w-10/12 flex justify-around items-start h-24 bg-white  rounded-xl p-4 ' >
+         <div className='w-12/12 flex justify-around items-start h-24 bg-white  rounded-xl p-4 ' >
               <span className='w-12'><img src={juliusomo} alt="" /></span> 
               <textarea name="" id="ReplytTxt" cols="10" rows="10" className='w-8/12 h-full border-gray p-4 resize-none border-2 rounded-lg' placeholder='Add a comment...'></textarea>
               <button className='rounded-lg bg-ModerateBlue text-white font-bold w-20 h-10 ' onClick={()=> SendClick()} >Send</button>

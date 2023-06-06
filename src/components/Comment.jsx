@@ -80,7 +80,7 @@ export default function Comment(props) {
               <div className='flex items-center justify-around gap-x-4' >
                  <span className='w-10'><img src={props.initialComments.image} alt="" /></span>
                  <h1 className='font-bold text-ModerateBlue'>{props.initialComments.name}</h1>
-                 <span className='text-GrayishBlue'>1 month ago</span>
+                 <span className='text-GrayishBlue hidden lg:flex'>1 month ago</span>
               </div> 
 
               <div className='flex items-center gap-2 cursor-pointer absolute lg:static bottom-4 right-6 '>

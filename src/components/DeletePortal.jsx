@@ -44,7 +44,7 @@ export default function DeletePortal(props) {
 
   return (
     <div className='w-full h-screen absolute top-0 left-0 flex items-center justify-center bg-LightBlack' style={{display : props.deleteComment ? "flex" : 'none' }}>
-        <div className='w-8/12 lg:w-3/12 md:w-6/12 h-52  bg-white rounded-lg flex flex-col gap-4 p-4'>
+        <div className='w-10/12 lg:w-3/12 md:w-6/12 h-52  bg-white rounded-lg flex flex-col gap-4 p-4'>
            <h1 className='font-bold text-xl'>Delete comment</h1>
            <p className='text-GrayishBlue'>are you sure you want to delete this comment? This will remove the comment and can't be undone.</p>
         <div className='flex justify-between items-center'>
